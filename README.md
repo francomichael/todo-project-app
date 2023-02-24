@@ -1,2 +1,1 @@
-# todo-project-app
- My To Do App project
+# Welcome to My To Do App project.
