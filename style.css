@@ -2,39 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  body {
+body {
     background: url(/imagesFolder/firstImgWoods.jpg);
     background-size: cover;
     color: #064722;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
-  }
+}
 
-  header {
+header {
     font-family: 'Tilt Warp', cursive;
     font-size: 4rem;
-  }
-  
-  header, form {
+}
+
+header, form {
     min-height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  form input, form button {
+}
+
+form input, form button {
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
     background: white;
-  }
+}
+
 form button {
     color: #064722;
     background: #f7fffe;
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 form button:hover {
     background: #064722;
     color: white;
@@ -60,9 +63,11 @@ form button:hover {
     align-items: center;
     transition: all 1s ease;
 }
+
 .filter-todo {
     padding: 1rem;
 }
+
 .todo li {
     flex: 1;
 }
@@ -78,6 +83,7 @@ form button:hover {
 .complete-btn {
     background: #04ce5f;
 }
+
 .todo-item {
     padding: 0rem 0.5rem;
 }
@@ -97,7 +103,7 @@ form button:hover {
     opacity: 0.5;
 }
 
-/*CUSTOM SELECTOR */
+/*This is a custom selector below...*/
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -109,7 +115,7 @@ select {
     background-image: none;
 }
 
-/* Custom Select */
+/* Custom select */
 .select {
     margin: 1rem;
     position: relative;
@@ -121,7 +127,7 @@ select {
     cursor: pointer;
     width: 12rem;
 }
-/* Arrow */
+/* Arrow actions */
 .select::after {
     background: #064722;
     color: white;
@@ -134,7 +140,7 @@ select {
     pointer-events: none;
     transition: all 0.3 ease;
 }
-/* Transition */
+/* Transition affects */
 .select:hover::after {
     background: white;
     color:#064722;
