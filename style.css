@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url(/imagesFolder/firstImgWoods.jpg);
+    background: url(./imagesFolder/firstImgWoods.jpg);
     background-size: cover;
     color: #064722;
     font-family: "Poppins", sans-serif;
@@ -41,6 +41,16 @@ form button {
 form button:hover {
     background: #064722;
     color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; 
+}
+
+h3 {
+  text-align: center;
 }
 .todo-container {
     display: flex;
@@ -103,7 +113,7 @@ form button:hover {
     opacity: 0.5;
 }
 
-/*This is a custom selector below...*/
+/*This is a custom selector below....*/
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
