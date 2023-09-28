@@ -5,16 +5,18 @@
 }
 
 body {
-    background: url(./imagesFolder/firstImgWoods.jpg);
+    background: url(./imagesFolder/palmBig.jpg);
     background-size: cover;
-    color: #064722;
+    color: #0a6083;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
+    min-width: 90vw;
 }
 
 header {
     font-family: 'Tilt Warp', cursive;
     font-size: 4rem;
+    text-align: center;
 }
 
 header, form {
@@ -32,25 +34,25 @@ form input, form button {
 }
 
 form button {
-    color: #064722;
+    color: #0a6083;
     background: #f7fffe;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 form button:hover {
-    background: #064722;
+    background: #0a6083;
     color: white;
 }
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
 }
 
 h3 {
-  text-align: center;
+    text-align: center;
 }
 .todo-container {
     display: flex;
@@ -95,7 +97,7 @@ h3 {
 }
 
 .todo-item {
-    padding: 0rem 0.5rem;
+    padding: 1rem 0.5rem;
 }
 
 .fa-trash, .fa-check {
@@ -132,14 +134,14 @@ select {
     overflow: hidden;
 }
 select {
-    color: #064722;
+    color: #0a6083;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
     width: 12rem;
 }
 /* Arrow actions */
 .select::after {
-    background: #064722;
+    background: #0a6083;
     color: white;
     content: "\25BC";
     position: absolute;
@@ -153,7 +155,38 @@ select {
 /* Transition affects */
 .select:hover::after {
     background: white;
-    color:#064722;
+    color:#0a6083;
     transform: scale(1.5);
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 55px;
+        line-height: 50px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2vh;
+        text-align: center;
+    }
+
+    body {
+        background: url(./imagesFolder/palmSmall.jpg);
+        background-size: cover;
+        color: #125c77;
+        /*font-family: "Poppins", sans-serif;
+        min-height: 100vh;*/
+    }
+    
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    } 
+
+
 }
 
